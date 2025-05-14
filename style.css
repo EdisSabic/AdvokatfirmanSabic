@@ -8,8 +8,8 @@
 
 .header {
     width: 100%;
-    height: 60vh; /* Full screen height */
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/backgroundimage.png);
+    height: 100vh; /* Full screen height */
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/background1.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -165,7 +165,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 80px;
+  padding-top: 1px;
   transition: padding 0.3s ease;
 }
 
@@ -263,7 +263,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  top: 60%; /* Positioning the .text-box at 43% from the top */
+  top: 36%; /* Positioning the .text-box at 43% from the top */
 }
 
 .text-box h1 {
@@ -272,7 +272,7 @@
 
 .text-box p {
   margin: 10px 0 10px;
-  font-size: 17px;
+  font-size: 30px;
   color: #fff;
   text-align: center;
   line-height: 1.6;
@@ -427,7 +427,7 @@ p {
 .vertical-divider {
     width: 4px;
     background-color: #989898;
-    margin: 0 -1rem;
+    margin: 0 14rem;
 }
 
 .row2 {
@@ -448,7 +448,7 @@ p {
 /* Each column/box */
 .misstankt-col {
     flex: 1 1 auto;
-    padding: 30px;
+    padding: 1px;
     color: #000000;
 }
 
@@ -487,14 +487,21 @@ p {
     gap: 12px;
     text-decoration: none;
     cursor: pointer;
-    padding: 6px 10px;
+    padding: 1px 1px;
     border-radius: 8px;
 }
 
-h3 {
-    text-align: center;
+.misstankt-h3-l {
+    text-align: left;
     font-weight: 600;
-    margin: 10px 0;
+    margin: 19px 0;
+	letter-spacing: 0.5px;
+}
+.misstankt-h3-r {
+    text-align: center;
+    padding-left: 1px;
+    font-weight: 600;
+    margin: 19px 0;
 	letter-spacing: 0.5px;
 }
 
@@ -770,7 +777,7 @@ h3 {
 
 /* Styling the headings in each box */
 .footer2-box h2 {
-    font-size: 20px;
+    font-size: 17px;
     color: #fff;
     font-weight: 600; /* Stronger emphasis on headings */
     margin-bottom: 1px; /* Reduced space between header and text */
@@ -781,11 +788,11 @@ h3 {
 /* Styling for the paragraph text */
 .footer2-box p,
 .footer2-box a {
-    font-size: 17px;
+    font-size: 14px;
     color: #ffffff; /* Light gray for text */
     font-weight: 500;
     text-decoration: none;
-    line-height: 1.6; /* Adjusted line-height for better spacing */
+    line-height: 0.4; /* Adjusted line-height for better spacing */
     letter-spacing: 0.5px;
 }
 
@@ -886,7 +893,7 @@ h3 {
     display: flex;
     flex-direction: column; /* stack items vertically */
     align-items: flex-start; /* align to the left */
-    margin-bottom: 86px;
+    margin-bottom: 12px;
     color: #ffffff;
 }
 
@@ -899,8 +906,8 @@ h3 {
 
 .contact-col div p {
     color: #000000;
-    padding-left: 10px;
-	font-size: 17px
+    padding-left: 1px;
+	font-size: 17px;
 }
 
 .contact-col div h5 {
@@ -1004,6 +1011,7 @@ h3 {
     color: #000000;
     margin-bottom: 20px; /* Space below the heading */
 	letter-spacing: 0.5px;
+    padding-left: 10px;
 }
 
 .about-col p {
