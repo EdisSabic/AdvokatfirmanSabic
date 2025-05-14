@@ -172,7 +172,7 @@
 .nav-links ul {
   display: flex;
   list-style: none;
-  gap: 125px;
+  gap: 60px;
   padding: 0;
   margin: 0;
 }
@@ -391,7 +391,7 @@
     width: cover;
     text-align: center;
     background-color: #e4e4e4; /* Bakgrundsfärg för call-to-action-sektionen */
-    padding: 10px;
+    padding: 1px;
     color: #000000;
 }
 
@@ -427,7 +427,7 @@ p {
 .vertical-divider {
     width: 4px;
     background-color: #989898;
-    margin: 0 14rem;
+    margin: 0 5rem;
 }
 
 .row2 {
@@ -445,19 +445,27 @@ p {
     padding: 0 20px;
 }
 
+/* Flex row for layout */
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* This ensures the divider fills full height of its siblings */
+    gap: 0;
+}
+
 /* Each column/box */
 .misstankt-col {
     flex: 1 1 auto;
     padding: 1px;
     color: #000000;
+    display: flex;
+    justify-content: center;
 }
 
-
+/* Hover effect */
 .misstankt-col:hover {
     transform: translateY(-5px);
 }
-
-
 
 /* Headings inside the boxes */
 .misstankt-col h3 {
@@ -466,43 +474,47 @@ p {
     letter-spacing: 0.5px;
     margin-bottom: 10px;
     color: #000000;
-	text-align: left;
-	line-height: 1.6;
+    text-align: center;
+    line-height: 1.6;
 }
 
 /* Paragraphs inside the boxes */
 .misstankt-col p {
     color: #000000;
     font-size: 17px;
-	line-height: 1.6;
+    line-height: 1.6;
     padding: 0;
-	text-align: left;
-	font-weight: 600;
-	letter-spacing: 0.5px;
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
+/* Link wrapper */
 .misstankt-link {
     display: flex;
     align-items: center;
-    gap: 12px;
     text-decoration: none;
     cursor: pointer;
-    padding: 1px 1px;
+    padding: 1px;
     border-radius: 8px;
+    width: 100%;
+    justify-content: center;
 }
 
-.misstankt-h3-l {
-    text-align: left;
+/* Shared heading styling for both sides */
+.misstankt-h3 {
     font-weight: 600;
-    margin: 19px 0;
-	letter-spacing: 0.5px;
-}
-.misstankt-h3-r {
     text-align: center;
-    padding-left: 1px;
-    font-weight: 600;
-    margin: 19px 0;
-	letter-spacing: 0.5px;
+    padding: 0 50px;
+    margin: 10px 0;
+    letter-spacing: 0.5px;
+}
+
+/* Vertical divider between boxes */
+.vertical-divider {
+    width: 2px;
+    background-color: #ccc;
+    margin: 0 10px;
 }
 
 /* Responsive layout for mobile */
@@ -511,8 +523,21 @@ p {
         flex-direction: column;
     }
 
+    .vertical-divider {
+        display: none;
+    }
+
     .misstankt-col {
         flex-basis: 100%;
+        justify-content: center;
+    }
+
+    .misstankt-col h3 {
+        text-align: center;
+    }
+
+    .misstankt-h3 {
+        padding: 0 20px;
     }
 }
 
@@ -874,10 +899,11 @@ h3 {
 
 .contact-col {
     flex-basis: 43%; /* Controls the width of each column */
+    margin-bottom: 1px;
+    margin-top: 20px;
     margin-bottom: 20px;
-    margin-top: 40px;
-    margin-left: 28px;
-    margin-right: 25px;
+    margin-left: 87px;
+    margin-right: 20px;
     color: #000000;
 }
 
@@ -893,7 +919,7 @@ h3 {
     display: flex;
     flex-direction: column; /* stack items vertically */
     align-items: flex-start; /* align to the left */
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     color: #ffffff;
 }
 
@@ -908,6 +934,8 @@ h3 {
     color: #000000;
     padding-left: 1px;
 	font-size: 17px;
+    padding-bottom: 1px;
+    padding-top: 1px;
 }
 
 .contact-col div h5 {
@@ -915,6 +943,7 @@ h3 {
     color: #000000;
     font-weight: 600;
     letter-spacing: 0.5px;
+    margin-top: 5px
 }
 
 .contact-col input,
@@ -953,6 +982,8 @@ h3 {
 }
 
 /* Stilen för hela 'Om Oss' sektionen */
+
+
 .about-us {
     background-color: #ffffff;
     width: 100%;
@@ -994,8 +1025,52 @@ h3 {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    margin: 15px 0; /* Added margin for spacing around the image */
+    padding-top: 20px;
 }
+
+.image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-caption {
+    text-align: center;
+}
+
+.image-caption .title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    padding-top: 5px;
+    padding-bottom: 1px;
+}
+
+.image-caption .phone-number a {
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    padding-left: 20px;
+    padding-top: 1px;
+}
+
+.image-caption .phone-number a:hover {
+    color: #555;
+}
+
+
+.phone-number a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+}
+
+.phone-number a:hover {
+    color: #555555; /* Slight hover effect */
+}
+
 
 .about-col2 img {
     max-width: 52%;
