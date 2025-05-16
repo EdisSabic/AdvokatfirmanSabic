@@ -808,6 +808,7 @@ h3 {
     margin-bottom: 1px; /* Reduced space between header and text */
     line-height: 1.6; /* Adjust line-height for better spacing */
     letter-spacing: 0.5px;
+    padding-top: 1px
 }
 
 /* Styling for the paragraph text */
