@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://www.advokatsabic.se/sitemap.xml
+Sitemap: https://advokatsabic.se/sitemap.xml

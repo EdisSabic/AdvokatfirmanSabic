@@ -1,27 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.advokatsabic.se/</loc>
-    <lastmod>2025-05-16</lastmod>
-  </url>
-  <url>
-    <loc>https://www.advokatsabic.se/firman.html</loc>
-    <lastmod>2025-05-16</lastmod>
-  </url>
-  <url>
-    <loc>https://www.advokatsabic.se/kontakt.html</loc>
-    <lastmod>2025-05-16</lastmod>
-  </url>
-  <url>
-    <loc>https://www.advokatsabic.se/medarbetare.html</loc>
-    <lastmod>2025-05-16</lastmod>
-  </url>
-  <url>
-    <loc>https://www.advokatsabic.se/säkerhet.html</loc>
-    <lastmod>2025-05-16</lastmod>
-  </url>
-  <url>
-    <loc>https://www.advokatsabic.se/tjänster.html</loc>
-    <lastmod>2025-05-16</lastmod>
-  </url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://advokatsabic.se/</loc>
+  <lastmod>2025-05-16T00:00:00+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+
+<url>
+  <loc>https://advokatsabic.se/firman.html</loc>
+  <lastmod>2025-05-16T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://advokatsabic.se/kontakt.html</loc>
+  <lastmod>2025-05-16T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://advokatsabic.se/medarbetare.html</loc>
+  <lastmod>2025-05-16T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://advokatsabic.se/säkerhet.html</loc>
+  <lastmod>2025-05-16T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://advokatsabic.se/tjänster.html</loc>
+  <lastmod>2025-05-16T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
 </urlset>
